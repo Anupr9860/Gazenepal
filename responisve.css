@@ -90,19 +90,27 @@
     .swiper-slide {
         width: 50% !important;
     }
+ 
 }
+
 
 @media (min-width: 769px) {
     .res {
         display: none;
     }
     
-    /* Ensure packages1 stays in row for larger screens */
+ 
     .packages1 {
         flex-direction: row;
     }
+    .pack1 
+    {
+        display: flex;
+       
+    }
+
 }
-/* Mobile Menu Styles */
+
 .mobile-menu-container {
   position: relative;
   display: none;
