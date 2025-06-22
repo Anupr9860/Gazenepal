@@ -137,15 +137,18 @@ hr
     margin-bottom: 45px;
 }
 .packages {
-  width: 389px;
-  background: #F9F9F9;
-  border-radius: 20px;
-  padding: 15px;
-  text-align: left;
-  font-family: sans-serif;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  margin-top: 25px;
+  flex: 0 1 calc(33.333% - 24px); /* 3 per row, minus gap */
+  box-sizing: border-box;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  margin-bottom: 24px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 .JC
 {
     justify-content: space space-between;
@@ -240,10 +243,12 @@ h1
     font-size: 36PX;
     font-weight: 500;
 }
-.flex-wrap
-{
-    display: flex;
-    flex-wrap: wrap;
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px; /* Adjust gap as needed */
+  justify-content: center;
+  margin-bottom: 32px;
 }
 .destination
 {
@@ -255,14 +260,23 @@ h1
     font-size: 20px;
   
 }
-.button-destination
-{
-    margin: auto;
-    margin-top: 30px;
+.button-destination {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
 }
 .destination:hover{
     background: #2B2540;
     transition: 0.3s;
+}
+.button-destination .destination {
+  padding: 12px 32px;
+  font-size: 1.1em;
+  border-radius: 6px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
 }
 .yellow
 {
