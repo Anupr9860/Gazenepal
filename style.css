@@ -246,7 +246,7 @@ h1
 .flex-wrap {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px; /* Adjust gap as needed */
+  gap: 24px;
   justify-content: center;
   margin-bottom: 32px;
 }
